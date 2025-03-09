@@ -6,6 +6,8 @@ body {
     flex-direction: column;
     justify-content: flex-start; /* 上部に揃える */
     padding-top: 100px; /* 上部に余白を追加 */
+    position: relative;
+    z-index: 1;
 }
 
 .dashboard-container {
@@ -16,10 +18,8 @@ body {
     background-size: cover; /* 画像の大きさを自動調節 */
     background-position: center; /* 画像を中央に配置 */
     background-repeat: no-repeat; /* 画像を繰り返さない */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; /* 最背面に表示 */
+    position: relative;
+    z-index: 2;
 }
 
 .sidebar {
@@ -58,4 +58,17 @@ body {
     box-sizing: border-box;
     z-index: 1; /* 前面に表示 */
     margin-top: 20px; /* 上部に余白を追加 */
+}
+
+/* 背景画像のスタイル */
+body::before {
+    content: "";
+    background: url('path/to/your/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
