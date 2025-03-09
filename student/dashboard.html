@@ -12,6 +12,13 @@
 <body>
     <!-- タブの部分をインクルード -->
     <div id="tabs-container"></div>
+    <script>
+        fetch('../main/tabs.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('tabs-container').innerHTML = data;
+            });
+    </script>
     <div class="dashboard-container">
         <!-- サイドバーの部分をインクルード -->
         <div id="sidebar-container"></div>

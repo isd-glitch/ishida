@@ -11,6 +11,13 @@
 <body>
     <!-- タブの部分をインクルード -->
     <div id="tabs-container"></div>
+    <script>
+        fetch('tabs.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('tabs-container').innerHTML = data;
+            });
+    </script>
     <main>
         <h1>学校について</h1>
         <p>石田中学校は、...</p>
