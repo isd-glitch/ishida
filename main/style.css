@@ -1,3 +1,9 @@
+.body {
+    background-color : #636363;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* 日本語対応のモダンなフォント */
+}
 .tabs {
     list-style-type: none; /* ・を消す */
     padding: 0;
