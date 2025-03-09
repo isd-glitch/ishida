@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ダッシュボード - 石田中学校</title>
+    <link rel="stylesheet" href="../main/style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="../main/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+</head>
+<body>
+    <!-- タブの部分をインクルード -->
+    <div id="tabs-container"></div>
+    <div class="dashboard-container">
+        <!-- サイドバーの部分をインクルード -->
+        <div id="sidebar-container"></div>
+        <script>
+            fetch('sidebar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('sidebar-container').innerHTML = data;
+                });
+        </script>
+        <main class="dashboard-content">
+            <h1>ダッシュボード</h1>
+            <p>ここでは、...</p>
+        </main>
+    </div>
+</body>
+</html>
