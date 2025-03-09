@@ -6,6 +6,8 @@ body {
     text-align: center; /* テキストを中央揃え */
     background-color : #636363;
     color: #f0f0f0; /* 明るいグレーの文字色 */
+    justify-content: flex-start; /* 上部に揃える */
+    padding-top: 100px; /* 上部に余白を追加 */
 }
 
 main {
@@ -15,6 +17,7 @@ main {
     box-sizing: border-box;
     text-align: center; /* テキストを中央揃え */
     color: #f0f0f0; /* 明るいグレーの文字色 */
+    margin-top: 20px; /* 上部に余白を追加 */
 }
 
 .tabs {

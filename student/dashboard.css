@@ -4,6 +4,8 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; /* 上部に揃える */
+    padding-top: 100px; /* 上部に余白を追加 */
 }
 
 .dashboard-container {
@@ -55,4 +57,5 @@ body {
     padding: 20px;
     box-sizing: border-box;
     z-index: 1; /* 前面に表示 */
+    margin-top: 20px; /* 上部に余白を追加 */
 }
