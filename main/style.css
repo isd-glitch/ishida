@@ -1,12 +1,11 @@
-.body {
-    background-color : #636363;
-}
 body {
     font-family: 'Noto Sans JP', sans-serif; /* 日本語対応のモダンなフォント */
     display: flex;
     flex-direction: column;
     align-items: center; /* 中央揃え */
     text-align: center; /* テキストを中央揃え */
+    background-color : #636363;
+    color: #f0f0f0; /* 明るいグレーの文字色 */
 }
 
 main {
@@ -15,6 +14,7 @@ main {
     padding: 20px;
     box-sizing: border-box;
     text-align: center; /* テキストを中央揃え */
+    color: #f0f0f0; /* 明るいグレーの文字色 */
 }
 
 .tabs {
